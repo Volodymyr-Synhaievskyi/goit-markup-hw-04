@@ -119,12 +119,11 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  transition: background-color 250ms ease;
-  -webkit-transition: background-color 250ms ease;
-  -moz-transition: background-color 250ms ease;
-  -ms-transition: background-color 250ms ease;
-  -o-transition: background-color 250ms ease;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-banner-button {
@@ -143,6 +142,9 @@ ol {
 .header {
   background-color: var(--primary-light-color);
   border-bottom: 1px solid var(--third-ligth-color);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-wrap {
@@ -180,11 +182,15 @@ ol {
   position: relative;
   font-weight: 500;
   color: var(--primary-dark-color);
-  transition: color 250ms ease;
-  -webkit-transition: color 250ms ease;
-  -moz-transition: color 250ms ease;
-  -ms-transition: color 250ms ease;
-  -o-transition: color 250ms ease;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-list-item_active {
+  color: var(--corp-color-hover);
 }
 
 .header-list-item:after {
@@ -196,17 +202,15 @@ ol {
   width: 100%;
   bottom: 0;
   left: 0;
-  transition: background-color 250ms ease;
-  -webkit-transition: background-color 250ms ease;
-  -moz-transition: background-color 250ms ease;
-  -ms-transition: background-color 250ms ease;
-  -o-transition: background-color 250ms ease;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-.header-list-item:hover:after,
-.header-list-item:focus:after {
+.header-list-item_active:after {
   background-color: var(--corp-color-hover);
 
 }
@@ -222,7 +226,11 @@ ol {
 
 .header-address-item {
   color: var(--color-text);
-  transition: color 250ms ease;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-item:hover,
@@ -251,11 +259,11 @@ ol {
 
 .footer-wrap {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
 }
 
-.footer-wrap .icon-list {
-  margin-top: 16px;
+.footer-logo-wrap {
+  margin-right: 120px;
 }
 
 .social-wrap-title {
