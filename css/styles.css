@@ -54,11 +54,7 @@ ol {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
+
 }
 
 .section {
@@ -124,7 +120,7 @@ ol {
   letter-spacing: 0.04em;
 }
 
-.main-banner-button [data-modal-open] {
+.main-banner-button {
   background-color: var(--corp-color);
   color: var(--primary-light-color);
 }
@@ -498,4 +494,9 @@ ol {
   border-radius: 4px;
   padding: 24px 100px;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
 }
