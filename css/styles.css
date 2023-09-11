@@ -216,7 +216,7 @@ img {
 /* Studio - Section 1*/
 .studio {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office-1.jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -717,18 +717,6 @@ img {
 
 }
 
-/* modal-btn  */
-
-.modal-btn:focus,
-.modal-btn:hover {
-  border: none;
-  background-color: var(--pressed-state);
-}
-
-.modal-btn:focus svg,
-.modal-btn:hover svg {
-  fill: #fff;
-}
 
 .backdrop.is-hidden .modal {
   transform: scale(0.2);
