@@ -706,7 +706,7 @@ img {
   left: 50%;
 
   transform: translateX(-50%) translateY(-50%) scale(1);
-  background: #fcfcfc;
+
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
@@ -714,6 +714,7 @@ img {
   background-color: var(--dairy-bg-cl);
 
   transition: transform var(--trns-fast);
+  background: #fcfcfc;
 }
 
 .modal-window.is-hidden .modal {
