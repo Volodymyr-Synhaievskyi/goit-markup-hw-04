@@ -717,6 +717,19 @@ img {
 
 }
 
+/* modal-btn  */
+
+.modal-btn:focus,
+.modal-btn:hover {
+  border: none;
+  background-color: var(--pressed-state);
+}
+
+.modal-btn:focus svg,
+.modal-btn:hover svg {
+  fill: #fff;
+}
+
 .backdrop.is-hidden .modal {
   transform: scale(0.2);
 }
